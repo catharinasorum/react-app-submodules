@@ -1,0 +1,8 @@
+.videos {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    max-height: 40vh;
+    overflow: scroll;
+}
+

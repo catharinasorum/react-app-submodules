@@ -1,22 +1,78 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400&display=swap');
+
+body, html {
+  background-color: #1A86A8;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.submodule {
+  padding: 1rem;
+  background-color: white;
+}
+
+button {
+  background-color: white;
+  outline: none;
+  border-radius: 8px;
+  padding: 8px; 
+  width: 150px;
+  color: #1A86A8;
+  border: 1px dotted #1A86A8;
+}
+
+button:hover {
+  border: 1px dotted white;
+  font-weight: 800;
+  background-color: #1A86A8;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2rem;
+  color: white;
+}
+
+h2 {
+  font-weight: 200;
+  color: #1A86A8;
+  text-align: center;
+}
+
+b {
+  color:#1A86A8;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px dotted #1A86A8;
+}
+
+.birds {
+  background-color: #eee;
+  color: black;
+  padding: 0.5rem;
+
+}
+
+.birdies {
+  max-height: 34vh;
+  overflow: scroll;
 }
