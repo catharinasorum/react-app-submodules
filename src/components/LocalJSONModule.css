@@ -1,8 +1,9 @@
 .videos {
     display: grid;
     gap: .2rem;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     max-height: 40vh;
     overflow: scroll;
+    margin-top: 5px;
 }
 

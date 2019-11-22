@@ -1,6 +1,7 @@
 .video {
-    background-color: #eee;
+    background-color: rgba(26,134,168,0.5);;
     color: black;
     padding: 0.5rem;
     font-size: 0.8rem;
+    height: 20vh;
 }

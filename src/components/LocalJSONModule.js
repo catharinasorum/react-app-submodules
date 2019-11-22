@@ -4,14 +4,20 @@ import LocalJSONSubModule from './LocalJSONSubmodule'
 import './LocalJSONModule.css'
 
 const LocalJSONModule = (props) => {
-    const [videos, setVideos] = useState(mtv)
+    const [videos, setVideos] = useState(mtv.videos)
+    const filterVideos = (e) => {
+        setVideos (
+            mtv.videos.filter ( video => video.song.toLowerCase().includes(e.target.value ) )
+        )
+    }
+
     return (
         <div className='submodule'>
             <h2>This module uses data from a local JSON file</h2>
-            <p>And the videos on the first MTV broadcast was:</p>
+            <input type='text' placeholder='Type to filter the videos by title' onInput={filterVideos} />
             <div className='videos'>
             {
-                mtv.videos.map(
+                videos.map(
                     video => <LocalJSONSubModule song={video.song} artist={video.artist} number={video.number} appearance={video.appearance}/>
                 )
             }

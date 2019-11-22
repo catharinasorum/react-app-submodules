@@ -7,6 +7,7 @@ import BasicStateModule from './components/BasicStateModule'
 import StateArrayModule from './components/StateArrayModule'
 import LocalJSONModule from './components/LocalJSONModule'
 import LocalJSONSubmodule from './components/LocalJSONSubmodule'
+import Checklist from './components/Checklist'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <DefaultPropsModule />
         <BasicPropsModule value='pink' />
         <BasicModule />
+        <Checklist />
         <StateArrayModule />
         <LocalJSONModule />
       </div>

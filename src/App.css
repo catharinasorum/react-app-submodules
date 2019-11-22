@@ -57,7 +57,7 @@ b {
   color:#1A86A8;
 }
 
-input {
+input[type='text'] {
   padding: 8px;
   width: 200px;
   outline: none;
@@ -66,13 +66,13 @@ input {
 }
 
 .birds {
-  background-color: #eee;
-  color: black;
   padding: 0.5rem;
-
+  margin-top: 5px;
+  border: 1px dotted #1A86A8;
+  border-radius: 8px;
 }
 
 .birdies {
-  max-height: 34vh;
+  max-height: 40vh;
   overflow: scroll;
 }
