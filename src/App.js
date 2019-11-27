@@ -7,6 +7,7 @@ import BasicStateModule from './components/BasicStateModule'
 import StateArrayModule from './components/StateArrayModule'
 import LocalJSONModule from './components/LocalJSONModule'
 import Checklist from './components/Checklist'
+import Characters from './components/Characters'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Checklist />
         <StateArrayModule />
         <LocalJSONModule />
+        <Characters />
       </div>
     </section>
   )
