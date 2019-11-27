@@ -6,7 +6,6 @@ import DefaultPropsModule from './components/DefaultPropsModule'
 import BasicStateModule from './components/BasicStateModule'
 import StateArrayModule from './components/StateArrayModule'
 import LocalJSONModule from './components/LocalJSONModule'
-import LocalJSONSubmodule from './components/LocalJSONSubmodule'
 import Checklist from './components/Checklist'
 
 const App = () => {
